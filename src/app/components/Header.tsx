@@ -72,21 +72,16 @@ function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
           label="Email"
         />
       )}
-      {contact.tel && (
+      {contact.github && (
+        <SocialButton href={contact.github} icon={MailIcon} label="GitHub" />
+      )}
+      {contact.linkedin && (
         <SocialButton
-          href={`tel:${contact.tel}`}
-          icon={PhoneIcon}
-          label="Phone"
+          href={contact.linkedin}
+          icon={MailIcon}
+          label="LinkedIn"
         />
       )}
-      {contact.social.map((social) => (
-        <SocialButton
-          key={social.name}
-          href={social.url}
-          icon={social.icon}
-          label={social.name}
-        />
-      ))}
     </div>
   );
 }
@@ -98,41 +93,61 @@ interface PrintContactProps {
 
 function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
   return (
-    <div
-      className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]"
-      aria-label="Print contact information"
-    >
-      {personalWebsiteUrl && (
-        <>
-          <a
-            className="underline hover:text-foreground/70"
-            href={personalWebsiteUrl}
-          >
-            {new URL(personalWebsiteUrl).hostname}
-          </a>
-          <span aria-hidden="true">/</span>
-        </>
-      )}
-      {contact.email && (
-        <>
-          <a
-            className="underline hover:text-foreground/70"
-            href={`mailto:${contact.email}`}
-          >
-            {contact.email}
-          </a>
-          <span aria-hidden="true">/</span>
-        </>
-      )}
-      {contact.tel && (
-        <a
-          className="underline hover:text-foreground/70"
-          href={`tel:${contact.tel}`}
-        >
-          {contact.tel}
-        </a>
-      )}
-    </div>
+    <>
+      <div
+        className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]"
+        aria-label="Print contact information"
+      >
+        {personalWebsiteUrl && (
+          <>
+            <a
+              className="underline hover:text-foreground/30"
+              href={personalWebsiteUrl}
+            >
+              {new URL(personalWebsiteUrl).hostname}
+            </a>
+            <span aria-hidden="true">/</span>
+          </>
+        )}
+        {contact.email && (
+          <>
+            <a
+              className="underline hover:text-foreground/30"
+              href={`mailto:${contact.email}`}
+            >
+              {contact.email}
+            </a>
+            <span aria-hidden="true">/</span>
+          </>
+        )}
+      </div>
+      <div
+        className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]"
+        aria-label="Print contact information"
+      >
+        {contact.github && (
+          <>
+            <a
+              className="underline hover:text-foreground/30"
+              href={contact.github}
+            >
+              {"github/emre-guler"}
+            </a>
+            <span aria-hidden="true">/</span>
+          </>
+        )}
+        {contact.linkedin && (
+          <>
+            <a
+              className="underline hover:text-foreground/30"
+              href={contact.linkedin}
+            >
+              {"linkedin/emregulerdev"}
+            </a>
+          </>
+        )}
+      </div>
+    </>
   );
 }
 

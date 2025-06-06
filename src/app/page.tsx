@@ -47,11 +47,7 @@ function getCommandMenuLinks() {
   }
 
   return [
-    ...links,
-    ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
-      url: socialMediaLink.url,
-      title: socialMediaLink.name,
-    })),
+    ...links
   ];
 }
 

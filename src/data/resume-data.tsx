@@ -7,70 +7,52 @@ import {
   ParabolLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+import { Linkedin } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
-  about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+  name: "Emre Güler",
+  initials: "EG",
+  location: "Ankara, Turkiye",
+  locationLink: "https://www.google.com/maps/place/Ankara",
+  about: "Software Developer @ Sertifier",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+      Software Developer with over 6 years of experience in developing and maintaining web applications using C#, .NET Core, Golang, Redis, Docker, Azure, GCP, and MySQL. Skilled in designing and implementing RESTful APIs, microservices architectures, and CI/CD pipelines. Strong background in testing and debugging to ensure high performance and code quality.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "https://avatars.githubusercontent.com/u/39224401",
+  personalWebsiteUrl: "https://emreguler.dev",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
-    social: [
-      {
-        name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
-        icon: GitHubIcon,
-      },
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
-        icon: LinkedInIcon,
-      },
-      {
-        name: "X",
-        url: "https://x.com/BartoszJarocki",
-        icon: XIcon,
-      },
-    ],
+    email: "hi@emreguler.dev",
+    github: "https://github.com/emre-guler",
+    linkedin: "https://www.linkedin.com/in/emregulerdev/",
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Nisantasi University",
+      degree: "Associate's degree, Computer Programming",
+      start: "2019",
+      end: "2023",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
-      badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
+      company: "Sertifier",
+      link: "https://sertifier.com",
+      badges: ["dotnet", "docker", "golang", "sql", "gcp", "redis"],
+      title: "Back-end Developer",
       logo: ConsultlyLogo,
-      start: "2024",
+      start: "Mar 2023",
       end: null,
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+         At Sertifier, I work as a Back-end Developer, building robust and scalable solutions for the company's SaaS platform. My responsibilities include designing and maintaining efficient microservices, optimizing database structures, and ensuring seamless integration with third-party tools and services.
+          <br />
+          <br />
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Languages & Frameworks: C# .NET Core, Golang Fiber, Node.js
+              Express
             </li>
             <li>
               Established release process enabling faster deployments and
@@ -84,158 +66,62 @@ export const RESUME_DATA = {
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: [
-        "Remote",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        "Tailwind CSS",
-      ],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      company: "Inveon",
+      link: "https://inveon.com",
+      badges: [".NET", "C#", "SQL"],
+      title: "Back-end Developer",
+      start: "Jul 2021",
+      end: "Feb 2023",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          At Inveon, I worked as a Back-end Developer, developing and maintaining scalable backend systems for high-traffic e-commerce platforms. I contributed to digital commerce solutions for enterprise clients.
+          <br />
+          <br />
           <ul className="list-inside list-disc">
+            <li>Languages & Frameworks: C#, .NET</li>
+            <li>Tools & Platforms: MsSQL, Redis</li>
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Development Practices: CI/CD pipelines, version control (Git),
+              Agile methodologies
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
+      company: "Codex",
+      link: "https://codex.com",
+      badges: [".NET", "SQL", "React.js"],
+      title: "Junior Software Developer",
       logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
+      start: "Jun 2019",
+      end: "May 2021",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
+          As a Junior Software Developer at Codex, I actively contributed to the development of client-focused web applications. My role included implementing new features, maintaining code quality, and collaborating with the team to deliver robust solutions.
+          <br />
+          <br />
           <ul className="list-inside list-disc">
-            <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
-            </li>
-            <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
-            </li>
-            <li>
-              Led development teams across multiple successful client projects
-            </li>
+            <li>Languages & Frameworks: C#, .NET Core</li>
+            <li>Tools & Platforms: MySQL, Git, Visual Studio</li>
+            <li>Development Practices: Agile methodologies, CI/CD</li>
           </ul>
         </>
       ),
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
-      badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
-      description: (
-        <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
-          <ul className="list-inside list-disc">
-            <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
-            </li>
-            <li>Built and mentored high-performing mobile development team</li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
-      badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
-    "System Architecture",
-    "Remote Team Leadership",
+    "C#",
+    "Golang",
+    "Redis",
+    "Azure",
+    "GCP",
+    "SQL",
+    "Docker",
+    ".NET Core",
+    "RESTful APIs",
+    "Microservices",
+    "CI/CD",
   ],
-  projects: [
-    {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
-      description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Consultly",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-        "Tailwind CSS",
-        "PostgreSQL",
-        "Redis",
-      ],
-      description:
-        "Platform for online consultations with real-time video meetings and scheduling",
-      logo: ConsultlyLogo,
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
-      logo: MonitoLogo,
-      link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
-      },
-    },
-  ],
+  projects: [],
 } as const;
